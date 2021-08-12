@@ -24,7 +24,7 @@ export default function SimilarMovies({movie, BASE_URL, setclickedData, SimilarM
 		className= {styles.similarMovies}
 		onClick= {()=> getClickedSimilarMovie(movie.id)}
 		>
-		  <img
+		  <Image
 		  style= {{margin: '0'}}
 		  width={250} 
 		  height={350} 

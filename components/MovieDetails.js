@@ -48,7 +48,7 @@ export default function MovieDetails({result, setclickedData, isThumbPressed, se
         <animated.div style= {props} >
           <div className= {styles.movieDetails}>
             <div className= {styles.childMovieDetails} style= {{display: "flex"}}>
-              <img width={300} height={450}src={ `${BASE_URL}${result.poster_path}`||
+              <Image width={300} height={450}src={ `${BASE_URL}${result.poster_path}`||
               `${BASE_URL}${result.backdrop_path}`} alt={result.title}/>
               <div className= {styles.details}>
                 <p className= {styles.title}>{result.title}</p>

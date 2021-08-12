@@ -33,7 +33,7 @@ export default function Search({SearchRes, movieResult}) {
 	const Person = Persons.map((person) => {
 		const BASE_URL = "https://image.tmdb.org/t/p/w200"
 		return (
-        <div className={styles.person} >
+        <div key ={person.id} className={styles.person} >
 	        <Image
 	        width={200}
 	        height={200}
