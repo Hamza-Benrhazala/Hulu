@@ -39,16 +39,16 @@ export default function Home({results, movieResult}) {
   //    else SetKeyword('')
   // }
 
-  useEffect(async() => {
-    if (keyword) {
-      Router.push(`?genre=${genre || "toprated"}&q=${keyword}`)
-      const API_KEY = '14b0a966f2e070912953d42efcfb3c2e'
-      const url = "https://api.themoviedb.org/3";
-      const SearchReq = await fetch(`${url}/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(keyword)}`)
-      .then(res => res.json())
-      SetSData(SearchReq.results)
-    }
-  },[keyword])
+  // useEffect(async() => {
+  //   if (keyword) {
+  //     Router.push(`?genre=${genre || "toprated"}&q=${keyword}`)
+  //     const API_KEY = '14b0a966f2e070912953d42efcfb3c2e'
+  //     const url = "https://api.themoviedb.org/3";
+  //     const SearchReq = await fetch(`${url}/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(keyword)}`)
+  //     .then(res => res.json())
+  //     SetSData(SearchReq.results)
+  //   }
+  // },[keyword])
 
   const ElSearchResults = sData.map((item, index) => {
     if(index <=9) return <C_Search key= {item.id} SearchResult= {item} /> 
