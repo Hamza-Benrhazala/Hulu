@@ -38,8 +38,6 @@ export default function MovieDetails({result, setclickedData, isThumbPressed, se
       </SwiperSlide> 
     )
   }
-  
-  // console.log(Swiper.wrapperEl)
 
   return (
     <div className= {styles.container__movieDetails}>
@@ -47,7 +45,7 @@ export default function MovieDetails({result, setclickedData, isThumbPressed, se
       <div style= {{display: "flex"}}>
         <animated.div style= {props} >
           <div className= {styles.movieDetails}>
-            <div className= {styles.childMovieDetails} style= {{display: "flex"}}>
+            <div className= {styles.childMovieDetails}>
               <Image
               width={300}
               height={450}

@@ -1,8 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Thumbnail from './thumbnail.js'
 import {useState, useEffect} from 'react'
-// import Image from 'next/image'
-// import Avatar from '../public/avatar.jpg'
 
 export default function Results({data, setData, SimilarMoviesData, setControlledSwiper}) {
 

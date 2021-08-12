@@ -45,10 +45,6 @@ export default function Search({SearchRes, movieResult}) {
         )
 	})
 
-	// console.log(Persons);
-
-	console.log(movieResult);
-
 	return (
 		<>
 			<NavIcons title="Search | Hulu" />

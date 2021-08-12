@@ -218,12 +218,15 @@
   background-color: #45494a;
   border-radius: 13px;
 }
-.container__movieDetails .movieDetails img {
+.container__movieDetails .movieDetails .childMovieDetails img {
   margin: 20px;
   border-radius: 13px;
 }
+.container__movieDetails .movieDetails img {
+  border-radius: 13px;
+}
 .container__movieDetails .movieDetails .details {
-  margin-top: 20px;
+  margin-left: 20px;
 }
 .container__movieDetails .movieDetails .title {
   font-size: 2em;
@@ -268,6 +271,8 @@
 }
 .childMovieDetails {
   display: flex;
+  align-items: center;
+  margin: 20px;
 }
 .container__similarMovies .similarMovies img {
   position: relative;
@@ -398,19 +403,6 @@
   text-align: center;
   cursor: pointer;
 }
-/*.HeaderIcon div .Icon::after {
-  content: attr(data-title);
-  position: absolute;
-  padding: .3em;
-  background-color: #353535;
-  color: white;
-  transform: translate(-50%, -60%);
-  opacity: 0;
-  transition: all 0.4s .5s;
-}
-.HeaderIcon div .Icon:hover::after {
-  opacity: 1;
-}*/
 .HeaderIcon div .Icon:hover svg {
   animation-name: bounce;
   animation-direction: alternate;
@@ -466,7 +458,6 @@
   }
   .childMovieDetails {
     flex-direction: column;
-    margin: 0 20px;
   }
   .Home_container__movieDetails .Home_movieDetails img {
     margin: 0;
@@ -489,6 +480,6 @@
     margin: 20px auto;
   }
   .childMovieDetails {
-    margin: auto;
+    margin: 35px auto 0 auto;
   }
 }

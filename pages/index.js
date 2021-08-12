@@ -32,23 +32,6 @@ export default function Home({results, movieResult}) {
 
   const {genre} = router.query
 
-  // function handleSearch(e) {
-  //    const q = e.target.value
-  //    if(q) SetKeyword(q)
-  //    else SetKeyword('')
-  // }
-
-  // useEffect(async() => {
-  //   if (keyword) {
-  //     Router.push(`?genre=${genre || "toprated"}&q=${keyword}`)
-  //     const API_KEY = '14b0a966f2e070912953d42efcfb3c2e'
-  //     const url = "https://api.themoviedb.org/3";
-  //     const SearchReq = await fetch(`${url}/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(keyword)}`)
-  //     .then(res => res.json())
-  //     SetSData(SearchReq.results)
-  //   }
-  // },[keyword])
-
   return (
     <div onClick= {()=> setSearchItems(false)} >
       <div onClick= {() => {if(isSortByopen) setIsSortByopen(!isSortByopen)}} >

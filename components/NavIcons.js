@@ -56,14 +56,6 @@ export default function NavIcons({title}) {
             <p>Profile</p>
           </div>
         </div>
-        {/*<ul className= {styles.SearchUl} >
-          <li>
-            <input type="text" onChange= {(e) => {handleSearch(e);setSearchItems(true) }} />
-          </li>
-          <li className= {keyword && searchItems ? styles.Container : undefined}>
-            {keyword && searchItems ? ElSearchResults : undefined}
-          </li>
-        </ul>*/}
         <Image width ={120} height={65} src={Hulu} alt="Hulu logo" />
       </div>
     </>
