@@ -90,6 +90,18 @@ export async function getServerSideProps(context) {
     `${url}${requests[genre]?.url ||
      requests.toprated.url}`).then(res => res.json())
 
+  if (!movieReq) {
+    return {
+      notFound: true,
+    }
+  }
+
+  if (!request) {
+    return {
+      notFound: true,
+    }
+  }
+
   return {
     props: {
       results: request.results,

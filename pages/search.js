@@ -88,6 +88,18 @@ export async function getServerSideProps(context) {
   const movieReq = await fetch(      
   `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`).then(mRes => mRes.json())
 
+  if (!SearchReq) {
+    return {
+      notFound: true,
+    }
+  }
+
+  if (!movieReq) {
+    return {
+      notFound: true,
+    }
+  }
+
   return {
     props: {
       SearchRes: SearchReq.results,
