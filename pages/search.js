@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react'
-import C_Search from '../components/Search.js'
 import styles from '../styles/Home.module.css'
 import Router, {useRouter} from 'next/router'
 import NavIcons from '../components/NavIcons.js'
@@ -39,6 +38,7 @@ export default function Search({SearchRes, movieResult}) {
 	        height={200}
 	        src={person.profile_path ? `${BASE_URL}${person.profile_path}` 
 	        : Avatar}
+	        alt={person.name}
 	        />
 	        <p>{person.name}</p>
         </div>

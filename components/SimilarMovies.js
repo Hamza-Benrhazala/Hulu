@@ -29,7 +29,9 @@ export default function SimilarMovies({movie, BASE_URL, setclickedData, SimilarM
 		  width={250} 
 		  height={350} 
 		  src= { `${BASE_URL}${movie.poster_path}`||
-		  `${BASE_URL}${movie.backdrop_path}`} />
+		  `${BASE_URL}${movie.backdrop_path}`}
+		  alt={movie.title}
+		  />
 		  <div className={styles.rating}>{movie.vote_average.toFixed(1) || "N/A"}</div>
 		  <p title={movie.title} style= {{fontSize: "1.2em", fontWeight: "bold", cursor: "pointer"}}>{movie.title}</p>
 		</div>

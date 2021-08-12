@@ -55,7 +55,9 @@ export default function Thumbnail({result, data, setData, SimilarMoviesData, set
         width={300} 
         height={450} 
         src= {result.poster_path ? `${BASE_URL}${result.poster_path}` :
-        Poster} />
+        Poster}
+        alt={result.title || result.name}
+        />
         <div className={styles.rating}>{result.vote_average || "N/A"}</div>
         <p title={result.overview} className={styles.overview}>{result.overview}</p>
         <h2 title={result.title || result.name} className={styles.title} >{result.title || result.name}</h2>

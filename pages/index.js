@@ -11,7 +11,6 @@ import Filters from '../components/Filters.js'
 import Router, {useRouter} from 'next/router'
 import Link from 'next/link'
 import SearchIcon from '@material-ui/icons/Search'
-import C_Search from '../components/Search.js'
 import Hulu from '../public/hulu_logo.png'
 import NavIcons from '../components/NavIcons.js'
 
@@ -49,10 +48,6 @@ export default function Home({results, movieResult}) {
   //     SetSData(SearchReq.results)
   //   }
   // },[keyword])
-
-  const ElSearchResults = sData.map((item, index) => {
-    if(index <=9) return <C_Search key= {item.id} SearchResult= {item} /> 
-  })
 
   return (
     <div onClick= {()=> setSearchItems(false)} >

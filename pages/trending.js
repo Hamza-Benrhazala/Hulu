@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react'
-import C_Search from '../components/Search.js'
 import styles from '../styles/Home.module.css'
 import Router, {useRouter} from 'next/router'
 import NavIcons from '../components/NavIcons.js'
