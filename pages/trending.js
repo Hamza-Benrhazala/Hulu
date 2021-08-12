@@ -28,6 +28,7 @@ export async function getServerSideProps(context) {
 
   const TrendingReq = await fetch(`${url}/trending/all/week?api_key=${API_KEY}&language=en-US`)
   .then(res => res.json())
+  .catch((er)=> console.log(er))
 
   if (!TrendingReq) {
       return {
@@ -36,7 +37,9 @@ export async function getServerSideProps(context) {
     }
 
   const movieReq = await fetch(      
-  `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`).then(mRes => mRes.json())
+  `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`)
+  .then(mRes => mRes.json())
+  .catch((er)=> console.log(er))
 
   if (!movieReq) {
       return {

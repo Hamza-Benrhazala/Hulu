@@ -84,9 +84,12 @@ export async function getServerSideProps(context) {
 
   const SearchReq = await fetch(`${url}/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(keyword)}`)
   .then(res => res.json())
+  .catch((er)=> console.log(er))
 
   const movieReq = await fetch(      
-  `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`).then(mRes => mRes.json())
+  `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`)
+  .then(mRes => mRes.json())
+  .catch((er)=> console.log(er))
 
   if (!SearchReq) {
     return {

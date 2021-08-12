@@ -84,11 +84,15 @@ export async function getServerSideProps(context) {
   const keyword= context.query.q;
   
   const movieReq = await fetch(      
-  `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`).then(mRes => mRes.json())
+  `${url}/movie/${movieId}/similar?api_key=${API_KEY}&language=en-US&page=1`)
+  .then(mRes => mRes.json())
+  .catch((er)=> console.log(er))
   
   const request = await fetch(      
     `${url}${requests[genre]?.url ||
-     requests.toprated.url}`).then(res => res.json())
+     requests.toprated.url}`)
+  .then(res => res.json())
+  .catch((er)=> console.log(er))
 
   if (!movieReq) {
     return {
