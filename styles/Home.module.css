@@ -5,6 +5,7 @@
   position: relative;
   /*display: flex;*/
   overflow-x: clip;
+  width: 100%;
 }
 .nav * {
   display: flex;
