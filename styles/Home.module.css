@@ -463,6 +463,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .container__movieDetails .movieDetails .details {
+    max-width: 300px;
+    margin-left: 0;
+  }
   .container {
     display: block;
   }
@@ -510,4 +514,3 @@
     margin: 0;
   }
 }
-
