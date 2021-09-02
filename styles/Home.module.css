@@ -200,7 +200,7 @@
   cursor: pointer;
 }
 .container__movieDetails .movieDetails {
-  margin: auto auto;
+  /*margin: auto auto;*/
   overflow: auto;
   background-color: white;
   max-width: 1200px;

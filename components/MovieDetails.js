@@ -79,7 +79,6 @@ export default function MovieDetails({result, setclickedData, isThumbPressed, se
               onSwiper={(swiper) => {
                 swiper.wrapperEl.classList
                 .add(`${styles.swiperFlex}`)
-                setControlledSwiper
               }}
               breakpoints={
                 {320: {slidesPerView: 1}, 500: {slidesPerView: 2}, 900: {slidesPerView: 3}, 1100: {slidesPerView: 4}}
