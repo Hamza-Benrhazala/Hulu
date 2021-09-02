@@ -200,11 +200,11 @@
   cursor: pointer;
 }
 .container__movieDetails .movieDetails {
-  /*margin: auto auto;*/
+  margin: auto auto;
   overflow: auto;
   background-color: white;
   max-width: 1200px;
-  height: 750px;
+  max-height: 750px;
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -505,3 +505,9 @@
     overflow: hidden;
   }
 }
+@media screen and (max-width: 800px) {
+  .container__movieDetails .movieDetails {
+    margin: 0;
+  }
+}
+
