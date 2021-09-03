@@ -475,6 +475,7 @@
   }
   .childMovieDetails {
     flex-direction: column;
+    align-items: center;
   }
   .Home_container__movieDetails .Home_movieDetails img {
     margin: 0;
