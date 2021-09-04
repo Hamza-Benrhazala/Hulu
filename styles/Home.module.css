@@ -3,7 +3,6 @@
 }
 .nav {
   position: relative;
-  /*display: flex;*/
   overflow-x: clip;
   overflow: hidden;
   width: 100%;
@@ -506,9 +505,6 @@
   .childMovieDetails {
     align-items: center;
     margin: 45px 20px;
-  }
-  .nav {
-    overflow: hidden;
   }
   .thumbnail {
     margin: 20px 25px;
