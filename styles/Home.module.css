@@ -159,11 +159,16 @@
   text-overflow: ellipsis;
 }
 .thumbnail .title {
+  display: -webkit-box;
   cursor: pointer;
   max-width: 300px;
   color: #f5f5f5;
   font-size: 1.3em;
   font-weight: 500;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }
 .thumbnail .date {
   font-size: 1em;
